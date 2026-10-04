@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Strada Café — Brioche Dorée</title>
+  <meta name="description" content="Strada Café by Brioche Dorée — Parisian café canteen. Exceptional coffees, simple gourmet, colorful and seasonal cuisine. Brunch, lunch & Strada to go." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════════════
+       HEADER / NAV
+  ═══════════════════════════════════════════════════ -->
+  <header class="site-header" role="banner">
+    <nav class="nav-inner" aria-label="Main navigation">
+
+      <a href="#hero" class="nav-logo" aria-label="Strada Café — back to top">
+        <svg class="nav-logo__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path d="M12 2 L13.5 10.5 L22 12 L13.5 13.5 L12 22 L10.5 13.5 L2 12 L10.5 10.5 Z"/>
+        </svg>
+        <span class="nav-logo__name">Brioche Dorée</span>
+        <span class="nav-logo__arrow" aria-hidden="true">▾</span>
+      </a>
+
+      <div class="nav-center nav-desktop-links">
+        <ul class="nav-links" role="list">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#about">Our Story</a></li>
+          <li><a href="#locations">Locations</a></li>
+          <li><a href="#reserve">Book a Table</a></li>
+        </ul>
+      </div>
+
+      <div class="nav-right nav-desktop-links">
+        <a href="#reserve" class="nav-book">Book Now</a>
+        <div class="nav-lang" role="group" aria-label="Language selector">
+          <button type="button">FR</button>
+          <button type="button" class="active">ENG</button>
+        </div>
+      </div>
+
+      <button class="nav-hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-nav">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </button>
+    </nav>
+  </header>
+
+  <nav id="mobile-nav" class="nav-mobile" aria-label="Mobile navigation">
+    <a href="#hero">Home</a>
+    <a href="#menu">Menu</a>
+    <a href="#about">Our Story</a>
+    <a href="#locations">Locations</a>
+    <a href="#reserve">Book a Table</a>
+    <a href="#reserve" class="btn btn-outline nav-mobile-book">Book Now</a>
+  </nav>
+
+  <main id="main-content">
+
+    <!-- ═══════════════════════════════════════════════════
+         SECTION 1 · HERO
+    ═══════════════════════════════════════════════════ -->
+    <section class="hero" id="hero" aria-label="Hero — Strada Café">
+
+      <img
+        class="hero__bg"
+        src="images/herophoto.jpg"
+        alt="Warm Parisian café exterior with golden light and lush greenery"
+        loading="eager"
+        fetchpriority="high"
+      />
+      <div class="hero__overlay" aria-hidden="true"></div>
+
+      <!-- Ghost bleed letters (decorative, matches reference) -->
+      <div class="hero__ghost" aria-hidden="true">
+        <span class="hero__ghost-left">Café</span>
+        <span class="hero__ghost-right">B</span>
+      </div>
+
+      <div class="hero__content">
+        <div class="hero__meta">
+          <span>94 rue du Temple, Paris FR</span>
+          <span class="hero__meta-sep" aria-hidden="true">/</span>
+          <span>French, European</span>
+          <span class="hero__meta-sep" aria-hidden="true">/</span>
+          <span>Average bill: €75</span>
+        </div>
+
+        <h1 class="hero__title">Strada Café</h1>
+
+        <div class="hero__bottom">
+          <blockquote class="hero__desc">
+            <p>Parisian café canteen, where you can taste exceptional coffees and simple, gourmet, colorful and seasonal cuisine. Brunch, lunch &amp; Strada to go…</p>
+          </blockquote>
+
+          <!-- Spinning circular badge — JS drives rotation -->
+          <div class="hero__badge" role="button" tabindex="0" aria-label="Learn more about the restaurant — scroll down">
+            <svg class="hero__badge-ring" viewBox="0 0 160 160" aria-hidden="true" focusable="false">
+              <path d="M80,14 Q87,9 94,14 Q99,5 107,10 Q109,1 117,6 Q121,-3 129,4 Q134,-3 140,5 Q147,1 149,10 Q157,8 157,17 Q165,18 162,26 Q169,30 164,38 Q169,44 162,49 Q166,56 158,59 Q159,67 151,68 Q149,76 141,75 Q138,83 130,79 Q125,87 117,81 Q111,87 105,79 Q98,84 94,76 Q86,79 83,71 Q75,72 74,64 Q66,63 68,55 Q60,52 63,44 Q56,38 61,31 Q55,24 62,19 Q58,11 66,10 Q66,1 74,5 Q77,-1 80,14 Z"
+                    fill="none" stroke="rgba(255,255,255,0.55)" stroke-width="1.2"/>
+              <defs>
+                <path id="tc" d="M80,80 m-56,0 a56,56 0 1,1 112,0 a56,56 0 1,1 -112,0"/>
+              </defs>
+              <text font-family="Montserrat,sans-serif" font-size="7.2" font-weight="600" letter-spacing="3.2" fill="white" text-anchor="start">
+                <textPath href="#tc" startOffset="0%">LEARN MORE · ABOUT THE RESTAURANT · </textPath>
+              </text>
+            </svg>
+            <div class="hero__badge-arrow" aria-hidden="true">
+              <svg viewBox="0 0 16 16" fill="none">
+                <polyline points="4,6 8,10 12,6" stroke="#111008" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════
+         SECTION 2 · MENU / SIGNATURE DISHES
+    ═══════════════════════════════════════════════════ -->
+    <section class="menu-section" id="menu" aria-label="Our Menu">
+      <div class="container">
+
+        <div class="section-head reveal">
+          <span class="tag">Seasonal &amp; Fresh</span>
+          <h2 class="section-title">Signature Dishes</h2>
+          <p class="section-sub">Everything on our menu honours the season. Made fresh, served with care.</p>
+        </div>
+
+        <!-- Category tabs -->
+        <div class="menu-tabs" role="tablist" aria-label="Menu categories">
+          <button class="tab-btn active" data-cat="all" type="button" role="tab" aria-selected="true">All</button>
+          <button class="tab-btn" data-cat="brunch" type="button" role="tab" aria-selected="false">Brunch</button>
+          <button class="tab-btn" data-cat="mains" type="button" role="tab" aria-selected="false">Mains</button>
+          <button class="tab-btn" data-cat="desserts" type="button" role="tab" aria-selected="false">Desserts</button>
+          <button class="tab-btn" data-cat="drinks" type="button" role="tab" aria-selected="false">Drinks</button>
+        </div>
+
+        <div class="menu-grid">
+
+          <article class="menu-card reveal reveal-delay-1" data-cat="brunch">
+            <div class="menu-card__img-wrap">
+              <img src="images/Œufs Bénédict.jpg" alt="Eggs Benedict with smoked salmon on brioche" loading="lazy" />
+            </div>
+            <div class="menu-card__body">
+              <span class="menu-card__badge">Brunch</span>
+              <h3 class="menu-card__name">Œufs Bénédict</h3>
+              <p class="menu-card__desc">Poached eggs, smoked salmon, hollandaise on toasted brioche.</p>
+              <span class="menu-card__price">€16</span>
+            </div>
+          </article>
+
+          <article class="menu-card reveal reveal-delay-2" data-cat="brunch">
+            <div class="menu-card__img-wrap">
+              <img src="images/Pancakes aux Fruits Rouges.jpg" alt="Buttermilk pancakes with mixed berries" loading="lazy" />
+            </div>
+            <div class="menu-card__body">
+              <span class="menu-card__badge">Brunch</span>
+              <h3 class="menu-card__name">Pancakes aux Fruits Rouges</h3>
+              <p class="menu-card__desc">Buttermilk pancakes, mixed berries, maple syrup &amp; mascarpone.</p>
+              <span class="menu-card__price">€14</span>
+            </div>
+          </article>
+
+          <article class="menu-card reveal reveal-delay-1" data-cat="mains">
+            <div class="menu-card__img-wrap">
+              <img src="images/Croque Monsieur.jpg" alt="Croque Monsieur with golden béchamel crust" loading="lazy" />
+            </div>
+            <div class="menu-card__body">
+              <span class="menu-card__badge">Chef's Pick</span>
+              <h3 class="menu-card__name">Croque Monsieur</h3>
+              <p class="menu-card__desc">Comté cheese, béchamel &amp; cured ham on pain de mie.</p>
+              <span class="menu-card__price">€14</span>
+            </div>
+          </article>
+
+          <article class="menu-card reveal reveal-delay-2" data-cat="mains">
+            <div class="menu-card__img-wrap">
+              <img src="images/Confit de Canard.jpg" alt="Duck confit with sarladaise potatoes" loading="lazy" />
+            </div>
+            <div class="menu-card__body">
+              <span class="menu-card__badge">Signature</span>
+              <h3 class="menu-card__name">Confit de Canard</h3>
+              <p class="menu-card__desc">Slow-cooked duck leg, sarladaise potatoes &amp; red wine cherry jus.</p>
+              <span class="menu-card__price">€26</span>
+            </div>
+          </article>
+
+          <article class="menu-card reveal reveal-delay-3" data-cat="mains">
+            <div class="menu-card__img-wrap">
+              <img src="images/Soupe à l'Oignon.jpg" alt="French onion soup with Gruyère crust" loading="lazy" />
+            </div>
+            <div class="menu-card__body">
+              <span class="menu-card__badge">Classic</span>
+              <h3 class="menu-card__name">Soupe à l'Oignon</h3>
+              <p class="menu-card__desc">Slow-caramelised onion broth, crouton &amp; gratinéed Gruyère lid.</p>
+              <span class="menu-card__price">€12</span>
+            </div>
+          </article>
+
+          <article class="menu-card reveal reveal-delay-4" data-cat="mains">
+            <div class="menu-card__img-wrap">
+              <img src="images/Tartine au Saumon.jpg" alt="Open-faced smoked salmon on sourdough" loading="lazy" />
+            </div>
+            <div class="menu-card__body">
+              <span class="menu-card__badge">New</span>
+              <h3 class="menu-card__name">Tartine au Saumon</h3>
+              <p class="menu-card__desc">Open-faced sourdough, smoked salmon, crème fraîche, dill &amp; capers.</p>
+              <span class="menu-card__price">€18</span>
+            </div>
+          </article>
+
+          <article class="menu-card reveal reveal-delay-1" data-cat="desserts">
+            <div class="menu-card__img-wrap">
+              <img src="images/Tarte Tatin.jpg" alt="Caramelised upside-down apple tart" loading="lazy" />
+            </div>
+            <div class="menu-card__body">
+              <span class="menu-card__badge">Dessert</span>
+              <h3 class="menu-card__name">Tarte Tatin</h3>
+              <p class="menu-card__desc">Caramelised apple tart with Normandy crème fraîche &amp; vanilla ice cream.</p>
+              <span class="menu-card__price">€9</span>
+            </div>
+          </article>
+
+          <article class="menu-card reveal reveal-delay-2" data-cat="desserts">
+            <div class="menu-card__img-wrap">
+              <img src="images/Crème Brûlée.jpg" alt="Crème brûlée with caramelised sugar top" loading="lazy" />
+            </div>
+            <div class="menu-card__body">
+              <span class="menu-card__badge">Classic</span>
+              <h3 class="menu-card__name">Crème Brûlée</h3>
+              <p class="menu-card__desc">Vanilla custard, caramelised sugar crust &amp; fresh raspberries.</p>
+              <span class="menu-card__price">€8</span>
+            </div>
+          </article>
+
+          <article class="menu-card reveal reveal-delay-1" data-cat="drinks">
+            <div class="menu-card__img-wrap">
+              <img src="images/Espresso.jpg" alt="Espresso coffee in a small white cup" loading="lazy" />
+            </div>
+            <div class="menu-card__body">
+              <span class="menu-card__badge">Coffee</span>
+              <h3 class="menu-card__name">Espresso / Café</h3>
+              <p class="menu-card__desc">Single or double shot of our house-blend arabica.</p>
+              <span class="menu-card__price">€3 / €4</span>
+            </div>
+          </article>
+
+          <article class="menu-card reveal reveal-delay-2" data-cat="drinks">
+            <div class="menu-card__img-wrap">
+              <img src="images/Vins Naturels.jpg" alt="Glass of natural French white wine" loading="lazy" />
+            </div>
+            <div class="menu-card__body">
+              <span class="menu-card__badge">Wine</span>
+              <h3 class="menu-card__name">Vins Naturels</h3>
+              <p class="menu-card__desc">Rotating Loire, Alsace &amp; Burgundy natural wine selection.</p>
+              <span class="menu-card__price">€7–€12</span>
+            </div>
+          </article>
+
+        </div><!-- /.menu-grid -->
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════
+         SECTION 3 · OUR STORY
+    ═══════════════════════════════════════════════════ -->
+    <section class="about-section" id="about" aria-label="Our Story">
+      <div class="container">
+        <div class="about-inner">
+
+          <div class="about-text reveal">
+            <span class="tag">Our Story</span>
+            <h2 class="section-title light">A Parisian institution<br/>since 1976</h2>
+            <div class="divider"></div>
+            <p>Brioche Dorée was born in Brittany with a simple belief — that quality food should be accessible to everyone, every day. Today, Strada Café is our love letter to the Parisian canteen.</p>
+            <p>Every dish honours the season. Every coffee is pulled with care. Every table invites you to stay a little longer.</p>
+
+            <div class="about-stats">
+              <div class="stat">
+                <strong>48</strong>
+                <span>Years of history</span>
+              </div>
+              <div class="stat">
+                <strong>12</strong>
+                <span>Locations</span>
+              </div>
+              <div class="stat">
+                <strong>4.9</strong>
+                <span>Guest rating</span>
+              </div>
+              <div class="stat">
+                <strong>340</strong>
+                <span>Team members</span>
+              </div>
+            </div>
+
+            <a href="#reserve" class="btn btn-outline">Reserve a Table</a>
+          </div>
+
+          <div class="about-visual reveal reveal-delay-2">
+            <div class="about-img-stack">
+              <img
+                class="about-img about-img--main"
+                src="images/teaser.jpg"
+                alt="Chef plating a colourful seasonal dish in the Strada Café kitchen"
+                loading="lazy"
+              />
+              <img
+                class="about-img about-img--secondary"
+                src="images/Brand story.jpg"
+                alt="Rustic French bakery interior with wooden shelves and fresh pastries"
+                loading="lazy"
+              />
+              <div class="about-badge" aria-label="48 years of excellence">
+                <strong>48</strong>
+                <span>Years of<br/>Excellence</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════
+         SECTION 4 · LOCATIONS
+    ═══════════════════════════════════════════════════ -->
+    <section class="locations-section" id="locations" aria-label="Our Locations">
+      <div class="container">
+
+        <div class="section-head reveal">
+          <span class="tag">Where to find us</span>
+          <h2 class="section-title">Our Locations</h2>
+          <p class="section-sub">12 locations across France. Walk-ins always welcome.</p>
+        </div>
+
+        <div class="loc-grid">
+
+          <div class="loc-card reveal reveal-delay-1">
+            <div class="loc-card__pin" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>
+              </svg>
+            </div>
+            <h3 class="loc-card__city">Paris — Marais</h3>
+            <p class="loc-card__address">94 rue du Temple, 75003</p>
+            <ul class="loc-card__info">
+              <li>Mon–Fri 8:00–22:00</li>
+              <li>Sat–Sun 9:00–23:00</li>
+              <li>+33 1 42 77 88 99</li>
+            </ul>
+            <a href="#reserve" class="loc-card__cta">Book a table →</a>
+          </div>
+
+          <div class="loc-card reveal reveal-delay-2">
+            <div class="loc-card__pin" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>
+              </svg>
+            </div>
+            <h3 class="loc-card__city">Paris — St-Germain</h3>
+            <p class="loc-card__address">12 bd Saint-Germain, 75005</p>
+            <ul class="loc-card__info">
+              <li>Mon–Sun 7:30–23:00</li>
+              <li>+33 1 43 25 66 77</li>
+            </ul>
+            <a href="#reserve" class="loc-card__cta">Book a table →</a>
+          </div>
+
+          <div class="loc-card reveal reveal-delay-3">
+            <div class="loc-card__pin" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>
+              </svg>
+            </div>
+            <h3 class="loc-card__city">Lyon — Presqu'île</h3>
+            <p class="loc-card__address">3 place Bellecour, 69002</p>
+            <ul class="loc-card__info">
+              <li>Mon–Sat 8:00–21:00</li>
+              <li>+33 4 72 41 90 10</li>
+            </ul>
+            <a href="#reserve" class="loc-card__cta">Book a table →</a>
+          </div>
+
+          <div class="loc-card reveal reveal-delay-4">
+            <div class="loc-card__pin" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>
+              </svg>
+            </div>
+            <h3 class="loc-card__city">Bordeaux — Centre</h3>
+            <p class="loc-card__address">17 cours de l'Intendance, 33000</p>
+            <ul class="loc-card__info">
+              <li>Tue–Sun 9:00–21:30</li>
+              <li>+33 5 56 44 12 34</li>
+            </ul>
+            <a href="#reserve" class="loc-card__cta">Book a table →</a>
+          </div>
+
+          <div class="loc-card reveal reveal-delay-1">
+            <div class="loc-card__pin" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>
+              </svg>
+            </div>
+            <h3 class="loc-card__city">Nantes</h3>
+            <p class="loc-card__address">5 place du Commerce, 44000</p>
+            <ul class="loc-card__info">
+              <li>Mon–Sat 8:00–21:00</li>
+              <li>+33 2 40 73 56 78</li>
+            </ul>
+            <a href="#reserve" class="loc-card__cta">Book a table →</a>
+          </div>
+
+          <div class="loc-card reveal reveal-delay-2">
+            <div class="loc-card__pin" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>
+              </svg>
+            </div>
+            <h3 class="loc-card__city">Toulouse</h3>
+            <p class="loc-card__address">8 place du Capitole, 31000</p>
+            <ul class="loc-card__info">
+              <li>Mon–Sun 8:30–22:30</li>
+              <li>+33 5 61 22 88 45</li>
+            </ul>
+            <a href="#reserve" class="loc-card__cta">Book a table →</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════
+         SECTION 5 · RESERVE A TABLE
+    ═══════════════════════════════════════════════════ -->
+    <section class="reserve-section" id="reserve" aria-label="Reserve a Table">
+      <div class="container">
+
+        <div class="reserve-inner">
+
+          <!-- Left: info + testimonials -->
+          <div class="reserve-info reveal">
+            <span class="tag">We're expecting you</span>
+            <h2 class="section-title">Reserve<br/>your table</h2>
+            <div class="divider"></div>
+            <p>Join us for brunch, lunch or an intimate dinner. Walk-ins welcome — a reservation guarantees your spot.</p>
+
+            <div class="reserve-details">
+              <div class="reserve-detail">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                  <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+                </svg>
+                <div>
+                  <strong>Opening Hours</strong>
+                  <span>Mon–Fri 8:00–22:00 · Sat–Sun 9:00–23:00</span>
+                </div>
+              </div>
+              <div class="reserve-detail">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.62 3.43 2 2 0 0 1 3.59 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.96a16 16 0 0 0 6.13 6.13l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                </svg>
+                <div>
+                  <strong>Call us</strong>
+                  <span>+33 1 42 77 88 99</span>
+                </div>
+              </div>
+              <div class="reserve-detail">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/>
+                </svg>
+                <div>
+                  <strong>Email</strong>
+                  <span>bonjour@stradacafe.fr</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonials -->
+            <div class="testimonials">
+              <article class="t-card reveal reveal-delay-1">
+                <div class="t-stars" aria-label="5 stars">★★★★★</div>
+                <p class="t-quote">"The most honest, beautiful food in Paris. I come every Saturday."</p>
+                <div class="t-author">
+                  <img src="images/Amélie T. avatar.jpg" alt="Sophie M." loading="lazy" />
+                  <div>
+                    <strong>Sophie M.</strong>
+                    <span>Regular guest, Paris</span>
+                  </div>
+                </div>
+              </article>
+              <article class="t-card reveal reveal-delay-2">
+                <div class="t-stars" aria-label="5 stars">★★★★★</div>
+                <p class="t-quote">"Stunning interior, impeccable service. A rare gem in the Marais."</p>
+                <div class="t-author">
+                  <img src="images/Marc D. avatar.jpg" alt="Thomas L." loading="lazy" />
+                  <div>
+                    <strong>Thomas L.</strong>
+                    <span>Food critic, Le Figaro</span>
+                  </div>
+                </div>
+              </article>
+              <article class="t-card reveal reveal-delay-3">
+                <div class="t-stars" aria-label="5 stars">★★★★★</div>
+                <p class="t-quote">"The atmosphere is warm and the coffee is absolutely perfect."</p>
+                <div class="t-author">
+                  <img src="images/Claire V. avatar.jpg" alt="Isabelle R." loading="lazy" />
+                  <div>
+                    <strong>Isabelle R.</strong>
+                    <span>Blogger, Petit Futé</span>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <!-- Right: booking form -->
+          <div class="reserve-form-wrap reveal reveal-delay-2">
+            <form id="reserve-form" novalidate aria-label="Table reservation form">
+              <h3 class="form-title">Book your table</h3>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="r-name">Full name</label>
+                  <input type="text" id="r-name" name="name" placeholder="Marie Dupont" autocomplete="name" required aria-required="true" />
+                  <span class="form-error" role="alert"></span>
+                </div>
+                <div class="form-group">
+                  <label for="r-phone">Phone</label>
+                  <input type="tel" id="r-phone" name="phone" placeholder="+33 6 00 00 00 00" autocomplete="tel" required aria-required="true" />
+                  <span class="form-error" role="alert"></span>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="r-date">Date</label>
+                  <input type="date" id="r-date" name="date" required aria-required="true" />
+                  <span class="form-error" role="alert"></span>
+                </div>
+                <div class="form-group">
+                  <label for="r-time">Time</label>
+                  <select id="r-time" name="time" required aria-required="true">
+                    <option value="">Select time</option>
+                    <optgroup label="Brunch">
+                      <option>09:00</option><option>09:30</option><option>10:00</option>
+                      <option>10:30</option><option>11:00</option><option>11:30</option>
+                    </optgroup>
+                    <optgroup label="Lunch">
+                      <option>12:00</option><option>12:30</option><option>13:00</option>
+                      <option>13:30</option><option>14:00</option>
+                    </optgroup>
+                    <optgroup label="Dinner">
+                      <option>19:00</option><option>19:30</option><option>20:00</option>
+                      <option>20:30</option><option>21:00</option><option>21:30</option>
+                    </optgroup>
+                  </select>
+                  <span class="form-error" role="alert"></span>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="r-guests">Guests</label>
+                  <select id="r-guests" name="guests" required aria-required="true">
+                    <option value="">Number of guests</option>
+                    <option value="1">1 person</option>
+                    <option value="2">2 people</option>
+                    <option value="3">3 people</option>
+                    <option value="4">4 people</option>
+                    <option value="5">5 people</option>
+                    <option value="6">6 people</option>
+                    <option value="7">7 people</option>
+                  </select>
+                  <span class="form-error" role="alert"></span>
+                </div>
+                <div class="form-group">
+                  <label for="r-branch">Branch</label>
+                  <select id="r-branch" name="branch" required aria-required="true">
+                    <option value="">Select branch</option>
+                    <option value="marais">Paris — Marais</option>
+                    <option value="stgermain">Paris — St-Germain</option>
+                    <option value="lyon">Lyon</option>
+                    <option value="bordeaux">Bordeaux</option>
+                    <option value="nantes">Nantes</option>
+                    <option value="toulouse">Toulouse</option>
+                  </select>
+                  <span class="form-error" role="alert"></span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="r-notes">Special requests (optional)</label>
+                <textarea id="r-notes" name="notes" rows="3" placeholder="Allergies, high chair, birthday…"></textarea>
+              </div>
+
+              <button type="submit" class="form-submit">Confirm Reservation</button>
+            </form>
+
+            <div class="form-success" role="status" aria-live="polite">
+              <div class="form-success__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <polyline points="20 6 9 17 4 12" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <h3>Reservation confirmed!</h3>
+              <p>We'll send a confirmation to your phone within the hour. See you soon.</p>
+              <button type="button" class="form-reset btn btn-outline">Make another booking</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════════════ -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M12 2 L13.5 10.5 L22 12 L13.5 13.5 L12 22 L10.5 13.5 L2 12 L10.5 10.5 Z"/>
+            </svg>
+            <span>Brioche Dorée</span>
+          </div>
+          <p class="footer-tagline">A Parisian café canteen celebrating honest, colourful, seasonal cuisine since 1976.</p>
+        </div>
+        <nav class="footer-nav" aria-label="Page sections">
+          <h4>Navigate</h4>
+          <ul role="list">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#about">Our Story</a></li>
+            <li><a href="#locations">Locations</a></li>
+            <li><a href="#reserve">Reservations</a></li>
+          </ul>
+        </nav>
+        <div class="footer-contact">
+          <h4>Contact</h4>
+          <p>94 rue du Temple<br/>Paris 75003, France<br/><br/>+33 1 42 77 88 99<br/>bonjour@stradacafe.fr</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2024 Brioche Dorée · Strada Café. All rights reserved.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="Facebook">FB</a>
+          <a href="#" aria-label="Pinterest">PT</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
